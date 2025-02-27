@@ -9,31 +9,31 @@ Made this because Case doesn't allow making a GCal from the academic calendar da
 2. **Google Cloud Project**: Set up a Google Cloud project and enable the Google Calendar API. Follow the instructions [here](https://developers.google.com/calendar/quickstart/python) to create a service account and download the `client_secret.json` file.
 
 ### Steps
-1. **Clone the repository**:
+1. **Cloning the repository**:
     ```sh
     git clone <repository-url>
     cd <repository-directory>
     ```
 
-2. **Create a virtual environment**:
+2. **Creating a virtual environment**:
     ```sh
     python -m venv venv
     source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
     ```
 
-3. **Install dependencies**:
+3. **Installing dependencies**:
     ```sh
     pip install -r requirements.txt
     ```
 
-4. **Set up environment variables**:
+4. **Setting up environment variables**:
     - Create a [.env](http://_vscodecontentref_/1) file in the project root directory.
     - Add the following line to the [.env](http://_vscodecontentref_/2) file:
       ```env
       GOOGLE_APPLICATION_CREDENTIALS=client_secret.json
       ```
 
-5. **Run the script**:
+5. **Running the script**:
     ```sh
     python generate_gcal.py
     ```
